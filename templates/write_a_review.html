@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Yalieats</title>
+        <link rel="icon" type="image/x-icon" href="/static/favicon-32x32.png">
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="title" style="font-size:100px"><a href="/main">Yalieats</a></h1>
+            <i><h1 class="title"></h1>A New Way to Eat</i>
+            <p></p>
+            <ul>
+                <li><a href="/about_us"><h3>About Us</h3></a></li>
+                <li><a href="/your_account"><h3>Your Account</h3></a></li>
+                <li><a href="/contact"><h3>Contact Us</h3></a></li>
+                <li><a href="/logout"><h3>Log Out</h3></a></li>
+            </ul>
+        </div>
+        
+        <div class="write_a_review_main">
+            <div class="before_main_text">
+                <p>Please review your restaurant according to the following parameters.</p>
+                <form action="/write_a_review" method="post">
+                    <div class="form_format"> 
+                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="restaurant_name" name="restaurant_name" placeholder="Restaurant Name" type="text">
+                    </div>
+                    <div class="form_format"> 
+                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="price_rating" name="price_rating" placeholder="Price (1-10)" type="number" min="1" max="10">
+                    </div>
+                    <div class="form_format"> 
+                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="portion_size_rating" name="portion_size_rating" placeholder="Portion Size (1-10)" type="number" min="1" max="10">
+                    </div>
+                    <div class="form_format"> 
+                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="recommendation" name="recommendation" placeholder="Recommend? Yes or No" type="text">
+                    </div>
+                    <div class="form_format"> 
+                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="overall_restaurant_rating" name="overall_restaurant_rating" placeholder="Overall Experience (1-10)" type="number" min="1" max="10">
+                    </div>
+                    <div class="form_format"> 
+                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="deliciousness_rating" name="deliciousness_rating" placeholder="Overall Deliciousness (1-10)" type="number" min="1" max="10">
+                    </div>
+                    <div class="form_format"> 
+                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="review_text" name="review_text" placeholder="Any Comments?" type="text">
+                    </div>
+                    <button class="register_login_button" type="submit">Submit your Review</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            &nbsp
+            <p>
+                Brought to you by: Lisman Watch Company LLC
+            </p>
+            <p>
+                Copyright Marcus A. Lisman &copy; 2021
+            </p>
+            <p>
+                <a target="_blank" href="https://www.lismanwatchcompany.com">Visit LWC's Website <i>Here!</i></a>
+            </p>
+            &nbsp
+        </footer>
+    </body>
+</html>

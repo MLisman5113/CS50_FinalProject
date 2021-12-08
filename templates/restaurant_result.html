@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Yalieats</title>
+        <link rel="icon" type="image/x-icon" href="/static/favicon-32x32.png">
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="title" style="font-size:100px"><a href="/main">Yalieats</a></h1>
+            <i><h1 class="title"></h1>A New Way to Eat</i>
+            <p></p>
+            <ul>
+                <li><a href="/about_us"><h3>About Us</h3></a></li>
+                <li><a href="/your_account"><h3>Your Account</h3></a></li>
+                <li><a href="/contact_us"><h3>Contact Us</h3></a></li>
+                <li><a href="/logout"><h3>Log Out</h3></a></li>
+            </ul>
+        </div>
+        
+        <div class="restaurant_main">
+            <div class="restaurant_text">
+                    <h1 class="restaurant_title" style="font-size:45px">{{ name }}</h1>
+                    <h1 class="restaurant_title" style="font-size:20px"> {{ name }}'s Address: {{ address }}</h1>
+                    <h1 class="restaurant_title" style="font-size:20px">Phone Number: {{ phone_number }} </h1>
+                    <h1 class="restaurant_title" style="font-size:20px">Type of Food: {{ type_of_food }}</h1>
+                    <h1 class="restaurant_title" style="font-size:20px">On Snackpass: {{ on_snackpass }}</h1>
+                    <h1 class="restaurant_title" style="font-size:20px">Restaurant Vibe: {{ restaurant_vibe }}</h1>
+                    <p></p>
+                    <a href="https://www.google.com/maps/place/{{ address }}" target="_blank">
+                            <button class="restaurant_button">Get Google Maps Directions</button>
+                    </a>
+                    <p></p>
+                    <a href="tel:{{ phone_number }}" target="_blank">
+                        <button class="restaurant_button">Call {{ name }}</button>
+                    </a>
+                    <p></p>
+                    <a href="/reviews_static" target="_parent">
+                        <button class="restaurant_button">See Reviews</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            &nbsp
+            <p>
+                Brought to you by: Lisman Watch Company LLC
+            </p>
+            <p>
+                Copyright Marcus A. Lisman &copy; 2021
+            </p>
+            <p>
+                <a target="_blank" href="https://www.lismanwatchcompany.com">Visit LWC's Website <i>Here!</i></a>
+            </p>
+            &nbsp
+        </footer>
+    </body>
+</html>
